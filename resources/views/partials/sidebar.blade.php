@@ -1,0 +1,3 @@
+<div class="fixed right-0 flex-col w-[50%] h-screen bg-primary hidden" id="sidebar">
+
+</div>
