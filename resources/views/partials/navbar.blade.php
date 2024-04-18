@@ -1,6 +1,10 @@
-<div class="w-full bg-tertiary p-[10px] flex items-center justify-between">
+<div class="w-full bg-tertiary p-[10px] xl:p-[20px] flex items-center justify-between">
   <p class="text-xl font-bold text-center text-white">PILKETOS</p>
-  <label class="hamburger" id="button">
+  <ul class="items-center hidden gap-5 font-semibold text-white xl:flex">
+    <li class="cursor-pointer">KANDIDAT</li>
+    <li class="cursor-pointer">HASIL SUARA</li>
+  </ul>
+  <label class="hamburger lg:hidden" id="button">
     <input type="checkbox">
     <svg viewBox="0 0 32 32">
       <path class="line line-top-bottom"

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\admin\Auth\LoginAdminController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\KandidatController;
 use Illuminate\Support\Facades\Route;
@@ -18,3 +19,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [LoginController::class, 'index'])->name("login");
 
 Route::get('/kandidat', [KandidatController::class, 'index'])->name("kandidat");
+
+Route::get('/dashboard', function(){
+    return view('admin.pages.index');
+})->name("dashboard");
+
+Route::get('/login', [LoginAdminController::class, 'index'])->name("loginAdmin");
+Route::post('/login', [LoginAdminController::class, 'login'])->name("loginAdmin.login");

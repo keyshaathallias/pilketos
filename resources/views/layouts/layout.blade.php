@@ -21,5 +21,17 @@
 
   @vite('resources/js/app.js')
 </body>
+<script>
+  let btn = document.getElementById("button")
+  let isShow = false;
+
+  function open() {
+    document.getElementById("sidebar").classList.toggle("tes")
+  }
+
+  btn.addEventListener("click", function() {
+    open()
+  })
+</script>
 
 </html>
